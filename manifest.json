@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "RegHi",
-  "version":"1.0",
+  "version":"0.0.0.1",
   "description": "Regular expression highlighter for chrome.",
   "icons":{
 	"128":"icon128.png",
@@ -18,6 +18,4 @@
     "default_title": "Make this page red",
     "default_popup": "popup.html"
   }
-
-
 }
