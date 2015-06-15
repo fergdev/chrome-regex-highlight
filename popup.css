@@ -1,0 +1,65 @@
+body{
+	width:400px;
+	background-color:lightblue;
+
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:0px 0px 0px 0px;
+}
+
+#headerDiv{
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:5px 5px 5px 5px;
+
+}
+
+#inputDiv{
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:0px 5px 5px 5px;
+}
+#regexDisplay{
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:5px 0px 0px 0px;
+	color:red;
+}
+
+#showCheatDiv{
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:0px 0px 0px 0px;
+
+	text-align:center;
+	background:#555;
+	color:#ffffff;
+}
+#showCheatDiv:hover{
+	color:lightblue;
+}
+#regextb{
+	width:95%;
+	margin:auto;
+}
+
+#cheatDiv{
+	padding:0px 0px 0px 0px;
+	border:0px;
+	margin:0px 0px 0px 0px;
+}
+
+.cheatTable{
+	border:5px solid;
+	margin:0px 0px 5px 0px;
+	width:100%;
+	max-width:100%;
+	min-width:100%;
+}
+
+.cheatTable th{
+	text-align:center;
+	background-color:#555566;
+	color:#d4d4d9;
+
+}

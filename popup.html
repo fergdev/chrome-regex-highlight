@@ -2,13 +2,94 @@
 <html>
   <head>
     <title>RegHi</title>
-    <script src='popup.js' ></script>  
+	<link rel='stylesheet' type='text/css' href='popup.css'/>
+	<script src='jquery-2.1.4.min.js'></script>
+	<script src='popup.js' ></script>  
 </head>
   <body>
-    <h1>RegHi</h1>
-	<p>REGEX goes here</p> 
-	<input id='regextb' type="text" ></input>	   
-</body>
+	<div id='headerDiv'>
+    		<h1>RegHi</h1>
+	</div>
+	<div id='inputDiv'>
+		<p>REGEX goes here ... &lt;enter&gt; to highlight</p> 
 
+		<input id='regextb' type="text" ></input>
+		<p id='regexDisplay'>Modified regex goes here ...</p>	   
+	</div>
+	<div id='showCheatDiv'>
+		<h3>Show JS RegExp cheat</h3>
+	</div>
+	<div id='cheatDiv'>
+		<table class='cheatTable'>
+			<th colspan='2'>Basics</th>
+			<tr><td>.</td>	<td>Any character except newline</td></tr>
+			<tr><td>a</td>	<td>The character a</td></tr>
+			<tr><td>ab</td> <td>The string ab</td></tr>
+			<tr><td>a|b</td><td> a or b</td></tr>
+			<tr><td>a*</td> <td>0 or more a's</td></tr>
+			<tr><td>\</td> 	<td>Escapes a special character</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Quantifiers</th>
+			<tr><td>*</td>		<td>0 or more</td></tr>
+			<tr><td>+</td>		<td>1 or more</td></tr>
+			<tr><td>?</td>  	<td>0 or 1</td></tr>
+			<tr><td>{2}</td>	<td>Exactly 2</td></tr>
+			<tr><td>{2,5}</td> 	<td>Between 2 and 5</td></tr>
+			<tr><td>{2,}</td> 	<td>2 or more</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Groups</th>
+			<tr><td>(...)</td>	<td>Capturing group</td></tr>
+			<tr><td>(?:....)</td>	<td>Non capturing group</td></tr>
+			<tr><td>\Y</td>  	<td>Match the Y'th captured group</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Character classes</th>
+			<tr><td>[ab-d]</td>	<td>One character of: a,b,c, d</td></tr>
+			<tr><td>[^ab-d]</td>	<td>One character except: a, b, c, d</td></tr>
+			<tr><td>[\b]</td>  	<td>Backspace character</td></tr>
+			<tr><td>\d</td>		<td>One digit</td></tr>
+			<tr><td>\D</td> 	<td>One non digit</td></tr>
+			<tr><td>\s</td> 	<td>One whitespace</td></tr>
+			<tr><td>\S</td> 	<td>One non-whitespace</td></tr>
+			<tr><td>\w</td> 	<td>One word character</td></tr>
+			<tr><td>\W</td> 	<td>One non-word character</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Assertions</th>
+			<tr><td>^</td>		<td>Start of string</td></tr>
+			<tr><td>$</td>		<td>End of string</td></tr>
+			<tr><td>\b</td>  	<td>Word boundary</td></tr>
+			<tr><td>\B</td>		<td>None word boundary</td></tr>
+			<tr><td>(?=...)</td> 	<td>Positive lookahead</td></tr>
+			<tr><td>(!=...)</td> 	<td>Negative lookahead</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Flags</th>
+			<tr><td>g</td>		<td>Global match</td></tr>
+			<tr><td>!</td>		<td>Ignore case</td></tr>
+			<tr><td>m</td>  	<td>^ and $ match start and end of line</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Special Characters</th>
+			<tr><td>\n</td>		<td>Newline</td></tr>
+			<tr><td>\r</td>		<td>Carriage return</td></tr>
+			<tr><td>\t</td>  	<td>Tab</td></tr>
+			<tr><td>\YYY</td>	<td>Octal character YYY</td></tr>
+			<tr><td>\xYY</td> 	<td>Hexadecimal character YY</td></tr>
+			<tr><td>\uYYYY</td> 	<td>Hexadecimal character YYYY</td></tr>	
+			<tr><td>\cY</td> 	<td>Control character Y</td></tr>
+		</table>
+		<table class='cheatTable'>
+			<th colspan='2'>Replacement</th>
+			<tr><td>$$</td>		<td>Inserts $</td></tr>
+			<tr><td>$&amp;</td>	<td>Insert entire match</td></tr>
+			<tr><td>$`</td>  	<td>Insert preceding string</td></tr>
+			<tr><td>$'</td>		<td>Insert following string</td></tr>
+			<tr><td>$Y</td> 	<td>Insert Y'th captured group</td></tr>
+		</table>
+	</div>
+</body>
 </html>
 

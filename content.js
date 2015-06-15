@@ -1,6 +1,5 @@
 console.log('Content hello');
 
-
 var globalRegex;
 var globalSkipTags = new RegExp("^(?:SCRIPT|FORM|INPUT|TEXTAREA|IFRAME|VIDEO|AUDIO|REGHI)$");
   

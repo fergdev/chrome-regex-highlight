@@ -1,29 +1,23 @@
 {
+  "manifest_version": 2,
   "name": "RegHi",
-  "description": "Regular expression highlighter for chrome",
+  "version":"1.0",
+  "description": "Regular expression highlighter for chrome.",
+  "icons":{
+	"128":"icon128.png",
+  	"48":"icon48.png",
+	"16":"icon16.png"
+  },
   "version": "1.0",
   "permissions": [
     "activeTab",
     "tabs",
     "<all_urls>"  
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "browser_action": {
     "default_title": "Make this page red",
     "default_popup": "popup.html"
-  },
-
- "content_scripts": [
-  {
-    "matches": [
-      "<all_urls>"
-    ],
-    "js": ["content.js"]
   }
-  ],
- 
-  "manifest_version": 2
+
+
 }
